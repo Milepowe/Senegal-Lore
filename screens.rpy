@@ -369,9 +369,6 @@ screen main_menu():
         vbox:
             style "main_menu_vbox"
 
-            text "[config.name!t]":
-                style "main_menu_title"
-
             text "[config.version]":
                 style "main_menu_version"
 
