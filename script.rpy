@@ -9,13 +9,15 @@ define lockedin = Character('the lock in avatar', color="#999898")
 
 # Le jeu commence ici
 label start:
-    scene idle_background lock_realm
+    scene lock_realm
 
     show lock_avatar
 
     lockedin "the lock in is the means by which the grind is revealed"
 
     lockedin "only those who are locked in can achieve their lock in"
+
+    lockedin "attaining one's grind requires a lot of grind and unfailing sigma energy"
 
 
     return
