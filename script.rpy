@@ -4,14 +4,20 @@
 # ex: image eileen heureuse = "eileen_heureuse.png"
 
 # Déclarez les personnages utilisés dans le jeu.
-define e = Character('Eileen', color="#c8ffc8")
+define lockedin = Character('the lock in avatar', color="#999898")
 
 
 # Le jeu commence ici
 label start:
+    scene lock_realm
 
-    e "Vous venez de créer un nouveau jeu Ren'Py."
+    show lock_avatar
 
-    e "Après avoir ajouté une histoire, des images et de la musique, vous pourrez le présenter au monde entier !"
+    lockedin "the lock in is the means by which the grind is revealed"
+
+    lockedin "only those who are locked in can achieve their lock in"
+
+    lockedin "attaining one's grind requires a lot of grind and unfailing sigma energy"
+
 
     return
