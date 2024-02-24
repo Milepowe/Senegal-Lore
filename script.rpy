@@ -4,7 +4,7 @@
 # ex: image eileen heureuse = "eileen_heureuse.png"
 
 # Déclarez les personnages utilisés dans le jeu.
-define lockedin = Character('the lock in avatar', color="#999898")
+define lockedin = Character('The Lock In Avatar', color="#999898")
 define mc = Character("[playername]",color="#0084ff")
 
 
@@ -21,16 +21,18 @@ label start:
 
     lockedin "Le lock in sont les raisons par lequelles le {b}grind se revele."
 
-    lockedin "seuls ceux qui sont locked in, peuvent achever leur lock in."
+    lockedin "Seuls ceux qui sont locked in, peuvent achever leur lock in."
 
-    lockedin "atteindre son grind exige beaucoup de grind et une energie de sigma a toute epreuve."
+    lockedin "Atteindre son grind exige beaucoup de grind et une energie de sigma a toute epreuve."
 
     menu:
         lockedin "es-tu un hunter?"
 
         "oui":
+            mc "Oui monsieur je suis bel et bien un hunter"
             lockedin "Que ton grind soit rempli de grind."
         "non":
+            mc "Qu'est-ce un hunter je me sens tres faible"
             lockedin "Ta sentence est d'etre la plus grande des merguez, tu me decois beaucoup futur hunter"
 
 
