@@ -21,6 +21,9 @@ label start:
     show lock_avatar at center:
         zpos 0
         linear 1.0 zpos 200
+
+    show lock_avatar
+
     lockedin "Quel est ton nom inconnu au bataillon?"
     # input qui donne le nom du joueur
     $ playername = renpy.input("Quel est ton nom compatriote?")
