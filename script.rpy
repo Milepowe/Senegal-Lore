@@ -17,7 +17,7 @@ label start:
         zpos -100 zzoom True
     
     scene lock_realm
-    
+
     show lock_avatar at center:
         zpos 0
         linear 1.0 zpos 200
@@ -30,7 +30,14 @@ label start:
 
     #si le nom du joueur est "Elizabeth" il sera change pour "Elizabeth Wannabe"
     if playername == "Elizabeth":
-        eliza "nuh uh you're not me"
+        show elizabeth at left:
+            zpos 200 
+            linear 1.0 xpos 200 
+        eliza "Nuh uh you're not me"
+        eliza "There can't be two Elizabeth in this world"
+        show elizabeth:
+            linear 1.0 xpos 200 
+        hide elizabeth
         $ playername = "Elizabeth Wannabe"
     # [playername] est pour utiliser la variable playername
     lockedin "Bienvenu dans le locked in realm, [playername]"
