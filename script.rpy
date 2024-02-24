@@ -29,11 +29,11 @@ label start:
         lockedin "es-tu un hunter?"
 
         "oui":
-            mc "Oui monsieur je suis bel et bien un hunter"
+            mc "Oui monsieur je suis bel et bien un hunter."
             lockedin "Que ton grind soit rempli de grind."
         "non":
-            mc "Qu'est-ce un hunter je me sens tres faible"
-            lockedin "Ta sentence est d'etre la plus grande des merguez, tu me decois beaucoup futur hunter"
+            mc "Qu'est-ce un hunter? je me sens tres faible."
+            lockedin "Ta sentence est d'etre la plus grande des merguez, tu me decois beaucoup futur hunter".
 
 
 
