@@ -11,16 +11,17 @@ define eliza = Character("Elizabeth",color="#034888")
 # Le jeu commence ici
 label start:
     scene lock_realm
-
+    
     show lock_avatar
     lockedin "Quel est ton nom inconnu au bataillon?"
-
+    # input qui donne le nom du joueur
     $ playername = renpy.input("Quel est ton nom compatriote?")
 
+    #si le nom du joueur est "Elizabeth" il sera change pour "Elizabeth Wannabe"
     if playername == "Elizabeth":
         eliza "nuh uh you're not me"
         $ playername = "Elizabeth Wannabe"
-
+    # [playername] est pour utiliser la variable playername
     lockedin "Bienvenu dans le locked in realm, [playername]"
 
     lockedin "Le lock in sont les raisons par lequelles le {b}grind se revele."
@@ -29,6 +30,7 @@ label start:
 
     lockedin "Atteindre son grind exige beaucoup de grind et une energie de sigma a toute epreuve."
 
+    #ouvre un menu qui a deux choix oui ou non et affiche le texte correspondant
     menu:
         lockedin "es-tu un hunter?"
 
