@@ -13,25 +13,25 @@ label start:
     scene lock_realm
 
     show lock_avatar
-    lockedin "quel est ton nom inconnu au bataillon?"
+    lockedin "Quel est ton nom inconnu au bataillon?"
 
-    $ playername = renpy.input("quel est ton nom?")
+    $ playername = renpy.input("Quel est ton nom compatriote?")
 
-    lockedin "bienvenu dans le locked in realm [playername]"
+    lockedin "Bienvenu dans le locked in realm, [playername]"
 
-    lockedin "the lock in is the means by which the {b}grind is revealed"
+    lockedin "Le lock in sont les raisons par lequelles le {b}grind se revele."
 
-    lockedin "only those who are locked in can achieve their lock in"
+    lockedin "seuls ceux qui sont locked in, peuvent achever leur lock in."
 
-    lockedin "attaining one's grind requires a lot of grind and unfailing sigma energy"
+    lockedin "atteindre son grind exige beaucoup de grind et une energie de sigma a toute epreuve."
 
     menu:
-        lockedin "es-tu un hunter"
+        lockedin "es-tu un hunter?"
 
         "oui":
-            lockedin "que ton grind soit rempli de grind"
+            lockedin "Que ton grind soit rempli de grind."
         "non":
-            lockedin "ta sentence est d'etre la plus grande des merguez"
+            lockedin "Ta sentence est d'etre la plus grande des merguez, tu me decois beaucoup futur hunter"
 
 
 
