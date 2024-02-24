@@ -18,7 +18,7 @@ label start:
     $ playername = renpy.input("Quel est ton nom compatriote?")
 
     if playername == "Elizabeth":
-        eliza "nuh uh"
+        eliza "nuh uh you're not me"
         $ playername = "Elizabeth Wannabe"
 
     lockedin "Bienvenu dans le locked in realm, [playername]"
