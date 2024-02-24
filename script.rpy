@@ -6,7 +6,7 @@
 # Déclarez les personnages utilisés dans le jeu.
 define lockedin = Character('The Lock In Avatar', color="#999898")
 define mc = Character("[playername]",color="#0084ff")
-
+define eliza = Character("Elizabeth",color="#034888")
 
 # Le jeu commence ici
 label start:
@@ -16,6 +16,10 @@ label start:
     lockedin "Quel est ton nom inconnu au bataillon?"
 
     $ playername = renpy.input("Quel est ton nom compatriote?")
+
+    if playername == "Elizabeth":
+        eliza "nuh uh"
+        $ playername = "Elizabeth Wannabe"
 
     lockedin "Bienvenu dans le locked in realm, [playername]"
 
@@ -34,7 +38,6 @@ label start:
         "non":
             mc "Qu'est-ce un hunter? je me sens tres faible."
             lockedin "Ta sentence est d'etre la plus grande des merguez, tu me decois beaucoup futur hunter."
-
 
 
 
