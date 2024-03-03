@@ -10,7 +10,7 @@ define eliza = Character("Elizabeth",color="#034888")
 define HIMgor = Character("Igor",color="#001930")
 # Le jeu commence ici
 label start:
-# j'ai juste fait un ctrl 
+# j'ai juste fait un ctrl+c ctrl+v
     camera:
         perspective True
     transform zbg:
@@ -21,8 +21,6 @@ label start:
     show lock_avatar at center:
         zpos 0
         linear 1.0 zpos 200
-
-    show lock_avatar
 
     lockedin "Quel est ton nom inconnu au bataillon?"
     # input qui donne le nom du joueur
@@ -36,8 +34,6 @@ label start:
             linear 1.0 xpos 200 
         eliza "Nuh uh you're not me"
         eliza "There can't be two Elizabeth in this world"
-        show elizabeth:
-            linear 1.0 xpos 200 
         hide elizabeth
         $ playername = "Elizabeth Wannabe"
         $ Elizabeth_Flag = True
