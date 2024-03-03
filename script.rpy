@@ -7,7 +7,7 @@
 define lockedin = Character('The Lock In Avatar', color="#999898")
 define mc = Character("[playername]",color="#0084ff")
 define eliza = Character("Elizabeth",color="#034888")
-
+define HIMgor = Character("Igor",color="#001930")
 # Le jeu commence ici
 label start:
 # j'ai juste fait un ctrl 
@@ -30,6 +30,7 @@ label start:
 
     #si le nom du joueur est "Elizabeth" il sera change pour "Elizabeth Wannabe"
     if playername == "Elizabeth":
+        play music "Circustheme.mp3"
         show elizabeth at left:
             zpos 200 
             linear 1.0 xpos 200 
@@ -39,6 +40,7 @@ label start:
             linear 1.0 xpos 200 
         hide elizabeth
         $ playername = "Elizabeth Wannabe"
+        $ Elizabeth_Flag = True
     # [playername] est pour utiliser la variable playername
     lockedin "Bienvenu dans le locked in realm, [playername]"
 
@@ -58,6 +60,14 @@ label start:
         "non":
             mc "Qu'est-ce un hunter? je me sens tres faible."
             lockedin "Ta sentence est d'etre la plus grande des merguez, tu me decois beaucoup futur hunter."
+    hide lock_avatar
+    if Elizabeth_Flag == True:
+        show igor
+        HIMgor "Holy shit. \nYou fucking suck kid."
+        HIMgor "Don't blame the AI for your awful tactics\nWhat fucking knob uses Act Freely"
+        HIMgor "Use buffs dumbass,put down the\nguidebook and pickup some common sense"
+        HIMgor "This game isn't even hard\n do not name yourself Elizabeth do you have some fetsih or something"
+        HIMgor "you idiot"
 
 
 
