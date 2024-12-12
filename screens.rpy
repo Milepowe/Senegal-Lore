@@ -195,6 +195,7 @@ screen input(prompt):
 
 style created :
     size 150
+    color "#eeff00"
     font "road-rage.ttf"
 
 style input_prompt is default
